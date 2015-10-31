@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+     <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/theme_primary</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/theme_secondary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_secondary</item>
+        <item name="android:windowContentTransitions" tools:ignore="NewApi">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/transparent</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>
+        
+          
+        
+        <!-- Customize your theme here. -->
+    </style>
+    
+    
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    
+    <style name="EditTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/theme_primary</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/theme_secondary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_secondary</item>
+        <item name="android:windowContentTransitions" tools:ignore="NewApi">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/theme_secondary</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>
+	</style>
+</resources>

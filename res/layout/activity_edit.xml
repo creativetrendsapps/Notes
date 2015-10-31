@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutEdit"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".EditActivity"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbarEdit"
+        layout="@layout/toolbar_edit"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/titleEdit"
+        android:background="@color/transparent"
+        android:inputType="textCapSentences"
+        android:layout_below="@+id/toolbarEdit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="8dp"
+        android:paddingTop="14dp"
+        android:gravity="left"
+        android:hint="@string/note_title"
+        android:maxLines="1"
+        android:maxLength="2000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/black_50"
+        android:textColor="@color/black_95"
+        android:divider="@color/black_50"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titleEdit"
+        android:background="@color/transparent"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodyEdit"
+            android:background="@color/transparent"
+            android:inputType="textCapSentences|textImeMultiLine|textMultiLine"
+            android:gravity="start|end"
+            android:ems="10"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:hint="@string/note_body"
+            android:maxLines="2000"
+            android:textSize="18sp"
+            android:textColorHint="@color/black_50"
+            android:textColor="@color/black_95" />
+        
+        
+
+    </ScrollView>
+    
+    
+       
+   
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_elevation"
+        android:layout_below="@+id/toolbarEdit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/drop_shadow" />
+    
+    
+ 
+
+</RelativeLayout>

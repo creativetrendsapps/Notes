@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity" >
+
+    <item android:id="@+id/action_note_colour"
+        android:title="@string/action_note_colour"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_picker"
+        app:showAsAction="always|collapseActionView" />
+
+    <item android:id="@+id/action_font_size"
+        android:title="@string/action_font_size"
+        android:icon="@drawable/ic_size"
+        android:orderInCategory="102"
+        app:showAsAction="always|collapseActionView" />
+
+    <item android:id="@+id/action_add_picture"
+        android:title="Add Picture"
+        android:icon="@drawable/ic_picture"
+        android:orderInCategory="103"
+        app:showAsAction="always|collapseActionView" />
+
+    <item android:id="@+id/action_hide_show_body"
+        android:title="@string/action_hide_body"
+        android:icon="@drawable/ic_hide"
+        android:orderInCategory="104"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>
